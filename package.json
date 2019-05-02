@@ -4,7 +4,7 @@
     "description": "Load fonts quickly and easily.",
     "main": "lib/index.js",
     "scripts": {
-        "build": "babel src -d lib"
+        "build": "NODE_ENV=production babel src | terser --source-map --output lib/index.js"
     },
     "keywords": [],
     "author": "",
@@ -15,6 +15,7 @@
     "devDependencies": {
         "@babel/cli": "^7.4.4",
         "@babel/core": "^7.4.4",
-        "@babel/preset-env": "^7.4.4"
+        "@babel/preset-env": "^7.4.4",
+        "terser": "^3.17.0"
     }
 }
