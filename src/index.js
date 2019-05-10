@@ -17,7 +17,7 @@ const resolveStyles = font => {
 
 // Primary load function
 export default ops => {
-    const fonts = ops instanceof Array ? ops : [ops]
+    const fonts = Array.isArray(ops) ? ops : [ops]
     const families = []
 
     // declare all fonts

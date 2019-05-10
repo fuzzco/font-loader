@@ -1,10 +1,11 @@
 {
     "name": "@fuzzco/font-loader",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Load fonts quickly and easily.",
-    "main": "lib/index.js",
+    "main": "dist/index.js",
     "scripts": {
-        "build": "NODE_ENV=production babel src | terser --source-map --output lib/index.js"
+        "build": "mkdir -p dist && NODE_ENV=production babel src | terser --source-map --output ./dist/index.js",
+        "prepublish": "npm run build"
     },
     "keywords": [],
     "author": "",
