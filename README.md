@@ -27,6 +27,10 @@ You'll need to declare the fonts you want to use in your CSS. For example, in `<
 
 ## JS
 
+Install via npm:
+
+`npm install @fuzzco/font-loader`
+
 You can pass an object with string `name` (required) and arrays `weights` and/or `styles`:
 
 ```js

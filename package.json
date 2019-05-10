@@ -1,6 +1,6 @@
 {
     "name": "@fuzzco/font-loader",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Load fonts quickly and easily.",
     "main": "dist/index.js",
     "scripts": {
